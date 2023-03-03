@@ -1,17 +1,18 @@
 {
-  "name": "appmetrics",
-  "version": "5.1.1",
+  "name": "@skyswitch/appmetrics",
+  "version": "5.1.15",
   "engines": {
     "node": ">=6"
   },
   "description": "Node Application Metrics",
   "dependencies": {
-    "nan": "2.x",
-    "node-gyp": "5.x",
-    "tar": "4.x",
-    "semver": "^5.3.0",
-    "jszip": "2.5.x",
-    "ibmapm-embed": ">=19.9.0"
+    "nan": "^2.18.0",
+    "node-gyp": "^10.0.1",
+    "tar": "^6.2.0",
+    "semver": "^7.5.4",
+    "jszip": "^3.10.1",
+    "ibmapm-embed": "^21.9.0",
+    "log4js": "~6.9.1"
   },
   "devDependencies": {
     "codecov": "^3.1.0",
@@ -30,12 +31,18 @@
   },
   "directories": {
     "lib": "lib",
-    "probes": "probes"
+    "probes": "probes",
+    "test": "tests"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/RuntimeTools/appmetrics.git"
+    "url": "git+https://github.com/SkySwitch/appmetrics.git"
   },
   "author": "",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SkySwitch/appmetrics/issues"
+  },
+  "homepage": "https://github.com/SkySwitch/appmetrics#readme",
+  "main": "index.js"
 }

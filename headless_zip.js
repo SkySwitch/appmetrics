@@ -91,8 +91,11 @@ module.exports.headlessZip = function headlessZip(dirToZip) {
         compression: 'DEFLATE',
       });
     }
-    fs.writeFileSync(outputFileName, zip.generate({ type: 'nodebuffer', compression: 'DEFLATE' }));
-    deleteDir(dirToZip);
+    zip.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' })
+      .then(function(content) {
+        fs.writeFileSync(outputFileName, content);
+        deleteDir(dirToZip);
+      });
   }
 };
 
