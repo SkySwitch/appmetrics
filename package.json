@@ -1,13 +1,13 @@
 {
   "name": "@skyswitch/appmetrics",
-  "version": "5.1.15",
+  "version": "5.1.16",
   "engines": {
     "node": ">=6"
   },
   "description": "Node Application Metrics",
   "dependencies": {
     "nan": "^2.18.0",
-    "node-gyp": "^10.0.1",
+    "node-gyp": "^9.4.1|^10.0.1",
     "tar": "^6.2.0",
     "semver": "^7.5.4",
     "jszip": "^3.10.1",
